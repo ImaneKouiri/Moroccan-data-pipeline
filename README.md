@@ -54,28 +54,28 @@ Python Visualization (Jupyter Notebook)
 conda create -n moroccan-data-pipeline python=3.10
 conda activate moroccan-data-pipeline
 pip install -r requirements.txt
-
+```
 ### 2. Run ingestion & cleaning: 
 ```bash
 python scripts/ingest_data.py
-
+```
 ### 3. Create database & tables
 ```bash
 sudo -u postgres psql -f sql/create_database.sql
 psql -U imane -d moroccan_data -f sql/create_table.sql
-
+```
 ### 4. Load data into PostgreSQL
 ```bash
 python scripts/load_postgres.py
-
+```
 ### 5. Run analysis queries
 ```bash
 psql -U imane -d moroccan_data -f sql/analysis_queries.sql
-
+```
 ### 6. Open notebook
 ```bash
 jupyter notebook notebooks/analysis.ipynb
-
+```
 ## Notes
 - Database credentials are used for local development only.
 - PostgreSQL must be installed and running locally.
