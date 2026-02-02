@@ -38,7 +38,7 @@ SQL Analysis
 ↓
 Python Visualization (Jupyter Notebook)
 
-## 🛠️ Tools & Technologies
+## Tools & Technologies
 - Python
 - Pandas, NumPy, Matplotlib
 - PostgreSQL
