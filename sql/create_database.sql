@@ -1,0 +1,4 @@
+CREATE DATABASE moroccan_data;
+CREATE USER imane WITH PASSWORD 'daTa_sLop4309!';
+GRANT ALL PRIVILEGES ON DATABASE moroccan_data TO imane;
+GRANT ALL ON SCHEMA public TO imane;
